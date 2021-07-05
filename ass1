@@ -1,0 +1,40 @@
+# 1. Write a Python program which accepts the radius of a circle from the user and compute the area.
+
+def radius():
+    rad = int(input("enter the radius of a circle to compute the area? "))
+    area = (rad * rad) * 3.14
+    print(f"the area of the circle is {area}")
+
+# radius()
+
+# 2. Write a Python program to count the number of times letter ‘a’ appears in given list(using loops).
+
+def cnta():
+    aa = input("enter a sentence with the letter 'a' appearing multiple times? ")
+
+    count = 0
+
+    for i in aa:
+        if 'a' in i:
+            count += 1
+
+    print(f"the number of a's in the sentence {count}")
+
+# cnta()
+
+# 3. Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20.
+
+def sum2(x, y):
+    x = int(input("enter x? "))
+    y = int(input("enter y? "))
+
+    sum = x + y
+
+    if sum in range(15,21):
+        print("answer is 20")
+    else:
+        print(f"answer is {sum}")
+
+# sum2(10,2)
+# sum2(10,6)
+# sum2(15,6)
